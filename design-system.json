@@ -1,0 +1,3284 @@
+{
+  "name": "Frame",
+  "type": "FRAME",
+  "path": "",
+  "colors": [
+    {
+      "hex": "#ffffff",
+      "rgba": "rgba(255, 255, 255, 1.0)",
+      "opacity": 1.0
+    }
+  ],
+  "fonts": {},
+  "layout": {
+    "x": 0.0,
+    "y": 0.0,
+    "width": 1440.0,
+    "height": 1024.0,
+    "cornerRadius": 0,
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "paddingTop": 0,
+    "paddingBottom": 0,
+    "layoutMode": "",
+    "layoutGrow": 0,
+    "layoutAlign": "",
+    "gap": 0
+  },
+  "children": [
+    {
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#f8f9fc",
+          "rgba": "rgba(248, 249, 252, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {},
+      "layout": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1440.0,
+        "height": 1024.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#ffffff",
+          "rgba": "rgba(255, 255, 255, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {},
+      "layout": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 280.0,
+        "height": 1024.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#e5e7eb",
+          "rgba": "rgba(229, 231, 235, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {},
+      "layout": {
+        "x": 280.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1024.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#4f46e5",
+          "rgba": "rgba(79, 70, 229, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {},
+      "layout": {
+        "x": 32.0,
+        "y": 40.0,
+        "width": 40.0,
+        "height": 40.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "UniBudget",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#1f2937",
+          "rgba": "rgba(31, 41, 55, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 20.0,
+        "fontWeight": 700,
+        "letterSpacing": 0.0,
+        "lineHeight": 24.204544067382812,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 84.0,
+        "y": 48.0,
+        "width": 104.0,
+        "height": 24.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Dashboard",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#6b7280",
+          "rgba": "rgba(107, 114, 128, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 16.0,
+        "fontWeight": 400,
+        "letterSpacing": 0.0,
+        "lineHeight": 19.363636016845703,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 56.0,
+        "y": 134.0,
+        "width": 83.0,
+        "height": 19.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#eef2ff",
+          "rgba": "rgba(238, 242, 255, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {},
+      "layout": {
+        "x": 16.0,
+        "y": 180.0,
+        "width": 248.0,
+        "height": 50.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Expenses & Income",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#4f46e5",
+          "rgba": "rgba(79, 70, 229, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 16.0,
+        "fontWeight": 700,
+        "letterSpacing": 0.0,
+        "lineHeight": 19.363636016845703,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 56.0,
+        "y": 194.0,
+        "width": 153.0,
+        "height": 19.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#4f46e5",
+          "rgba": "rgba(79, 70, 229, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {},
+      "layout": {
+        "x": 24.0,
+        "y": 195.0,
+        "width": 20.0,
+        "height": 20.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Incomes",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#6b7280",
+          "rgba": "rgba(107, 114, 128, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 16.0,
+        "fontWeight": 400,
+        "letterSpacing": 0.0,
+        "lineHeight": 19.363636016845703,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 56.0,
+        "y": 254.0,
+        "width": 64.0,
+        "height": 19.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Budget",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#6b7280",
+          "rgba": "rgba(107, 114, 128, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 16.0,
+        "fontWeight": 400,
+        "letterSpacing": 0.0,
+        "lineHeight": 19.363636016845703,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 56.0,
+        "y": 314.0,
+        "width": 55.0,
+        "height": 19.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "University",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#6b7280",
+          "rgba": "rgba(107, 114, 128, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 16.0,
+        "fontWeight": 400,
+        "letterSpacing": 0.0,
+        "lineHeight": 19.363636016845703,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 56.0,
+        "y": 374.0,
+        "width": 76.0,
+        "height": 19.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#f3f4f6",
+          "rgba": "rgba(243, 244, 246, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {},
+      "layout": {
+        "x": 16.0,
+        "y": 940.0,
+        "width": 248.0,
+        "height": 60.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#d1d5db",
+          "rgba": "rgba(209, 213, 219, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {},
+      "layout": {
+        "x": 28.0,
+        "y": 952.0,
+        "width": 36.0,
+        "height": 36.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Student Name",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#1f2937",
+          "rgba": "rgba(31, 41, 55, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 14.0,
+        "fontWeight": 700,
+        "letterSpacing": 0.0,
+        "lineHeight": 16.94318199157715,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 76.0,
+        "y": 951.0,
+        "width": 98.0,
+        "height": 17.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "3rd Year Software Eng",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#6b7280",
+          "rgba": "rgba(107, 114, 128, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 12.0,
+        "fontWeight": 400,
+        "letterSpacing": 0.0,
+        "lineHeight": 14.522727012634277,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 76.0,
+        "y": 970.0,
+        "width": 128.0,
+        "height": 15.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Detailed Breakdown",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#1f2937",
+          "rgba": "rgba(31, 41, 55, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 32.0,
+        "fontWeight": 700,
+        "letterSpacing": 0.0,
+        "lineHeight": 38.727272033691406,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 340.0,
+        "y": 48.0,
+        "width": 314.0,
+        "height": 39.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Manage your detailed expenses and income sources.",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#6b7280",
+          "rgba": "rgba(107, 114, 128, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 16.0,
+        "fontWeight": 400,
+        "letterSpacing": 0.0,
+        "lineHeight": 19.363636016845703,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 340.0,
+        "y": 94.0,
+        "width": 402.0,
+        "height": 19.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Group",
+      "type": "GROUP",
+      "path": "Frame",
+      "colors": [],
+      "fonts": {},
+      "layout": {
+        "x": 1080.0,
+        "y": 50.0,
+        "width": 300.0,
+        "height": 48.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": [
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ffffff",
+              "rgba": "rgba(255, 255, 255, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 1080.0,
+            "y": 50.0,
+            "width": 300.0,
+            "height": 48.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f3f4f6",
+              "rgba": "rgba(243, 244, 246, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 1084.0,
+            "y": 54.0,
+            "width": 90.0,
+            "height": 40.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "This Week",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1105.0,
+            "y": 65.0,
+            "width": 72.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "This Month",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1200.0,
+            "y": 65.0,
+            "width": 75.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "This Year",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1300.0,
+            "y": 65.0,
+            "width": 62.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Group",
+      "type": "GROUP",
+      "path": "Frame",
+      "colors": [],
+      "fonts": {},
+      "layout": {
+        "x": 340.0,
+        "y": 160.0,
+        "width": 500.0,
+        "height": 480.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": [
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ffffff",
+              "rgba": "rgba(255, 255, 255, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 340.0,
+            "y": 160.0,
+            "width": 500.0,
+            "height": 480.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Expenses",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 20.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 24.204544067382812,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 370.0,
+            "y": 190.0,
+            "width": 96.0,
+            "height": 24.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#fef2f2",
+              "rgba": "rgba(254, 242, 242, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 760.0,
+            "y": 190.0,
+            "width": 50.0,
+            "height": 30.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "View All",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 772.0,
+            "y": 198.0,
+            "width": 48.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "CATEGORY",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 370.0,
+            "y": 238.0,
+            "width": 65.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "DATE",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 590.0,
+            "y": 238.0,
+            "width": 31.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "AMOUNT",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 740.0,
+            "y": 238.0,
+            "width": 54.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 265.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f3f4f6",
+              "rgba": "rgba(243, 244, 246, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 280.0,
+            "width": 32.0,
+            "height": 32.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Textbooks",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 415.0,
+            "y": 286.0,
+            "width": 73.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Nov 25",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 590.0,
+            "y": 286.0,
+            "width": 48.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "-$120.00",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 740.0,
+            "y": 286.0,
+            "width": 64.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 330.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f3f4f6",
+              "rgba": "rgba(243, 244, 246, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 350.0,
+            "width": 32.0,
+            "height": 32.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Grocery Run",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 415.0,
+            "y": 356.0,
+            "width": 86.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Nov 23",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 590.0,
+            "y": 356.0,
+            "width": 48.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "-$85.50",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 740.0,
+            "y": 356.0,
+            "width": 57.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 400.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f3f4f6",
+              "rgba": "rgba(243, 244, 246, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 420.0,
+            "width": 32.0,
+            "height": 32.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Netflix Sub",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 415.0,
+            "y": 426.0,
+            "width": 76.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Nov 20",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 590.0,
+            "y": 426.0,
+            "width": 48.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "-$14.00",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 740.0,
+            "y": 426.0,
+            "width": 55.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 470.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f3f4f6",
+              "rgba": "rgba(243, 244, 246, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 490.0,
+            "width": 32.0,
+            "height": 32.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Bus Pass",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 415.0,
+            "y": 496.0,
+            "width": 62.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Nov 18",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 590.0,
+            "y": 496.0,
+            "width": 46.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "-$90.00",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 740.0,
+            "y": 496.0,
+            "width": 58.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 370.0,
+            "y": 540.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Group",
+      "type": "GROUP",
+      "path": "Frame",
+      "colors": [],
+      "fonts": {},
+      "layout": {
+        "x": 880.0,
+        "y": 160.0,
+        "width": 500.0,
+        "height": 480.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": [
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ffffff",
+              "rgba": "rgba(255, 255, 255, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 880.0,
+            "y": 160.0,
+            "width": 500.0,
+            "height": 480.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Incomes",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#059669",
+              "rgba": "rgba(5, 150, 105, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 20.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 24.204544067382812,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 910.0,
+            "y": 190.0,
+            "width": 84.0,
+            "height": 24.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ecfdf5",
+              "rgba": "rgba(236, 253, 245, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 1300.0,
+            "y": 190.0,
+            "width": 50.0,
+            "height": 30.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "View All",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#059669",
+              "rgba": "rgba(5, 150, 105, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1312.0,
+            "y": 198.0,
+            "width": 48.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "SOURCE",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 910.0,
+            "y": 238.0,
+            "width": 50.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "DATE",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1130.0,
+            "y": 238.0,
+            "width": 31.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "AMOUNT",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1280.0,
+            "y": 238.0,
+            "width": 54.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 910.0,
+            "y": 265.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ecfdf5",
+              "rgba": "rgba(236, 253, 245, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 910.0,
+            "y": 280.0,
+            "width": 32.0,
+            "height": 32.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Part-time Job",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 955.0,
+            "y": 286.0,
+            "width": 94.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Nov 28",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1130.0,
+            "y": 286.0,
+            "width": 48.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "+$650.00",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#059669",
+              "rgba": "rgba(5, 150, 105, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1280.0,
+            "y": 286.0,
+            "width": 70.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 910.0,
+            "y": 330.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ecfdf5",
+              "rgba": "rgba(236, 253, 245, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 910.0,
+            "y": 350.0,
+            "width": 32.0,
+            "height": 32.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Parents Transfer",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 955.0,
+            "y": 356.0,
+            "width": 114.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Nov 01",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1130.0,
+            "y": 356.0,
+            "width": 46.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "+$1000.00",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#059669",
+              "rgba": "rgba(5, 150, 105, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1280.0,
+            "y": 356.0,
+            "width": 78.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 910.0,
+            "y": 400.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ecfdf5",
+              "rgba": "rgba(236, 253, 245, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 910.0,
+            "y": 420.0,
+            "width": 32.0,
+            "height": 32.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Gov Grant",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 955.0,
+            "y": 426.0,
+            "width": 69.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Sept 05",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1130.0,
+            "y": 426.0,
+            "width": 52.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "+$2500.00",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#059669",
+              "rgba": "rgba(5, 150, 105, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 14.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 16.94318199157715,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1280.0,
+            "y": 426.0,
+            "width": 79.0,
+            "height": 17.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [],
+          "fonts": {},
+          "layout": {
+            "x": 910.0,
+            "y": 470.0,
+            "width": 440.0,
+            "height": 0.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Quarterly Breakdown",
+      "type": "TEXT",
+      "path": "Frame",
+      "colors": [
+        {
+          "hex": "#1f2937",
+          "rgba": "rgba(31, 41, 55, 1.0)",
+          "opacity": 1.0
+        }
+      ],
+      "fonts": {
+        "fontFamily": "Inter",
+        "fontSize": 20.0,
+        "fontWeight": 700,
+        "letterSpacing": 0.0,
+        "lineHeight": 24.204544067382812,
+        "textAlign": ""
+      },
+      "layout": {
+        "x": 340.0,
+        "y": 680.0,
+        "width": 208.0,
+        "height": 24.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": []
+    },
+    {
+      "name": "Group",
+      "type": "GROUP",
+      "path": "Frame",
+      "colors": [],
+      "fonts": {},
+      "layout": {
+        "x": 340.0,
+        "y": 730.0,
+        "width": 240.0,
+        "height": 150.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": [
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ffffff",
+              "rgba": "rgba(255, 255, 255, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 340.0,
+            "y": 730.0,
+            "width": 240.0,
+            "height": 150.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Q1 (Jan - Mar)",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 16.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 19.363636016845703,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 360.0,
+            "y": 744.0,
+            "width": 111.0,
+            "height": 19.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Total Spent",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 360.0,
+            "y": 778.0,
+            "width": 65.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "$3,400",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 20.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 24.204544067382812,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 360.0,
+            "y": 795.0,
+            "width": 74.0,
+            "height": 24.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f3f4f6",
+              "rgba": "rgba(243, 244, 246, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 360.0,
+            "y": 840.0,
+            "width": 200.0,
+            "height": 6.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#4f46e5",
+              "rgba": "rgba(79, 70, 229, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 360.0,
+            "y": 840.0,
+            "width": 140.0,
+            "height": 6.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Group",
+      "type": "GROUP",
+      "path": "Frame",
+      "colors": [],
+      "fonts": {},
+      "layout": {
+        "x": 600.0,
+        "y": 730.0,
+        "width": 240.0,
+        "height": 150.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": [
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ffffff",
+              "rgba": "rgba(255, 255, 255, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 600.0,
+            "y": 730.0,
+            "width": 240.0,
+            "height": 150.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Q2 (Apr - Jun)",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 16.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 19.363636016845703,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 620.0,
+            "y": 744.0,
+            "width": 112.0,
+            "height": 19.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Total Spent",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 620.0,
+            "y": 778.0,
+            "width": 65.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "$2,800",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 20.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 24.204544067382812,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 620.0,
+            "y": 795.0,
+            "width": 72.0,
+            "height": 24.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f3f4f6",
+              "rgba": "rgba(243, 244, 246, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 620.0,
+            "y": 840.0,
+            "width": 200.0,
+            "height": 6.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#4f46e5",
+              "rgba": "rgba(79, 70, 229, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 620.0,
+            "y": 840.0,
+            "width": 100.0,
+            "height": 6.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Group",
+      "type": "GROUP",
+      "path": "Frame",
+      "colors": [],
+      "fonts": {},
+      "layout": {
+        "x": 860.0,
+        "y": 730.0,
+        "width": 240.0,
+        "height": 150.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": [
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#ffffff",
+              "rgba": "rgba(255, 255, 255, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 860.0,
+            "y": 730.0,
+            "width": 240.0,
+            "height": 150.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Q3 (Jul - Sep)",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#1f2937",
+              "rgba": "rgba(31, 41, 55, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 16.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 19.363636016845703,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 880.0,
+            "y": 744.0,
+            "width": 109.0,
+            "height": 19.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Total Spent",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#6b7280",
+              "rgba": "rgba(107, 114, 128, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 12.0,
+            "fontWeight": 400,
+            "letterSpacing": 0.0,
+            "lineHeight": 14.522727012634277,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 880.0,
+            "y": 778.0,
+            "width": 65.0,
+            "height": 15.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "$4,100",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#dc2626",
+              "rgba": "rgba(220, 38, 38, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 20.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 24.204544067382812,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 880.0,
+            "y": 795.0,
+            "width": 68.0,
+            "height": 24.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f3f4f6",
+              "rgba": "rgba(243, 244, 246, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 880.0,
+            "y": 840.0,
+            "width": 200.0,
+            "height": 6.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#4f46e5",
+              "rgba": "rgba(79, 70, 229, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 880.0,
+            "y": 840.0,
+            "width": 180.0,
+            "height": 6.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Group",
+      "type": "GROUP",
+      "path": "Frame",
+      "colors": [],
+      "fonts": {},
+      "layout": {
+        "x": 1120.0,
+        "y": 730.0,
+        "width": 240.0,
+        "height": 150.0,
+        "cornerRadius": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutMode": "",
+        "layoutGrow": 0,
+        "layoutAlign": "",
+        "gap": 0
+      },
+      "children": [
+        {
+          "name": "Vector",
+          "type": "VECTOR",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#f9fafb",
+              "rgba": "rgba(249, 250, 251, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {},
+          "layout": {
+            "x": 1120.0,
+            "y": 730.0,
+            "width": 240.0,
+            "height": 150.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        },
+        {
+          "name": "+ View Archive",
+          "type": "TEXT",
+          "path": "Frame/Group",
+          "colors": [
+            {
+              "hex": "#9ca3af",
+              "rgba": "rgba(156, 163, 175, 1.0)",
+              "opacity": 1.0
+            }
+          ],
+          "fonts": {
+            "fontFamily": "Inter",
+            "fontSize": 16.0,
+            "fontWeight": 700,
+            "letterSpacing": 0.0,
+            "lineHeight": 19.363636016845703,
+            "textAlign": ""
+          },
+          "layout": {
+            "x": 1195.0,
+            "y": 799.0,
+            "width": 119.0,
+            "height": 19.0,
+            "cornerRadius": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "layoutMode": "",
+            "layoutGrow": 0,
+            "layoutAlign": "",
+            "gap": 0
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

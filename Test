@@ -1,0 +1,202 @@
+npm install -g http-server
+/* -------- Global Styles -------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#container {
+  display: flex;
+  width: 100%;
+}
+
+/* -------- Sidebar -------- */
+#sidebar {
+  width: 250px;
+  background-color: #4F46E5;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#sidebar nav ul {
+  list-style-type: none;
+}
+
+#sidebar nav ul li {
+  margin: 15px 0;
+}
+
+#sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* -------- Main Content -------- */
+#main-content {
+  flex: 1;
+  padding: 30px;
+  margin-left: 250px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 16px;
+  color: #6B7280;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* -------- Dashboard Overview -------- */
+#income-expenses {
+  display: flex;
+  gap: 30px;
+}
+
+#total-income, #total-expenses, #net-balance {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#total-income h3, #total-expenses h3, #net-balance h3 {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+#total-income p, #total-expenses p, #net-balance p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.change-positive {
+  color: #10B981;
+  background-color: #D1FAE5;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.change-negative {
+  color: #EF4444;
+  background-color: #FEE2E2;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* -------- Spending Activity -------- */
+#spending-activity img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* -------- Transactions Table -------- */
+#transactions table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#transactions th, #transactions td {
+  padding: 12px;
+  text-align: left;
+}
+
+#transactions th {
+  background-color: #F9FAFB;
+}
+
+#transactions tbody tr:nth-child(even) {
+  background-color: #F9FAFB;
+}
+
+#transactions tbody tr:hover {
+  background-color: #E4E7EC;
+}
+
+/* -------- Expenses & Income Breakdown -------- */
+#expenses-income {
+  display: flex;
+  gap: 40px;
+}
+
+#expenses, #income {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#expenses h3, #income h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  #sidebar {
+    width: 200px;
+  }
+
+  #main-content {
+    margin-left: 200px;
+  }
+
+  #income-expenses {
+    flex-direction: column;
+  }
+}

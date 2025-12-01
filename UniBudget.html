@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniBudget - Student Expense Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* -------- Global Styles - Exact Figma Colors -------- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #f8f9fc;
+      color: #1f2937;
+      min-height: 100vh;
+    }
+
+    #container {
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    /* -------- Sidebar - Exact Figma Design -------- */
+    #sidebar {
+      width: 280px;
+      background-color: #ffffff;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #e5e7eb;
+    }
+
+    .sidebar-logo {
+      display: flex;
+      align-items: center;
+      padding: 40px 32px 0 32px;
+      margin-bottom: 60px;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #4f46e5;
+      border-radius: 8px;
+      margin-right: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .sidebar-logo h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 24.2px;
+    }
+
+    #sidebar nav {
+      padding: 0 16px;
+      flex: 1;
+    }
+
+    #sidebar nav ul {
+      list-style-type: none;
+    }
+
+    #sidebar nav ul li {
+      margin-bottom: 0;
+    }
+
+    #sidebar nav ul li a {
+      display: block;
+      padding: 12px 16px;
+      color: #6b7280;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.36px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      margin-bottom: 4px;
+    }
+
+    #sidebar nav ul li a:hover {
+      background-color: #f3f4f6;
+      color: #1f2937;
+    }
+
+    #sidebar nav ul li a.active {
+      background-color: #eef2ff;
+      color: #4f46e5;
+      font-weight: 700;
+    }
+
+    .sidebar-footer {
+      padding: 16px;
+      background-color: #f3f4f6;
+      margin: 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .sidebar-footer .avatar {
+      width: 36px;
+      height: 36px;
+      background-color: #d1d5db;
+      border-radius: 8px;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .sidebar-footer .user-info {
+      flex: 1;
+    }
+
+    .sidebar-footer .user-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 16.94px;
+      margin-bottom: 2px;
+    }
+
+    .sidebar-footer .user-role {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+      line-height: 14.52px;
+    }
+
+    /* -------- Main Content - Exact Figma Design -------- */
+    #main-content {
+      flex: 1;
+      margin-left: 280px;
+      padding: 48px 100px 48px 60px;
+      max-width: calc(100% - 280px);
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 38.73px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #6b7280;
+      line-height: 19.36px;
+    }
+
+    /* -------- Action Buttons - Exact Figma Design -------- */
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 40px;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      line-height: 16.94px;
+    }
+
+    .btn-secondary {
+      background-color: #f3f4f6;
+      color: #1f2937;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e5e7eb;
+    }
+
+    .btn-primary {
+      background-color: #4f46e5;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: #4338ca;
+    }
+
+    /* -------- Dashboard Cards - Exact Figma Design -------- */
+    #dashboard {
+      margin-bottom: 40px;
+    }
+
+    #income-expenses {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    #total-income, #total-expenses, #net-balance {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    #total-income h3, #total-expenses h3, #net-balance h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #6b7280;
+      margin-bottom: 12px;
+      line-height: 16.94px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    #total-income p, #total-expenses p, #net-balance p {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 24.2px;
+    }
+
+    #net-balance {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    }
+
+    #net-balance h3, #net-balance p {
+      color: #ffffff;
+    }
+
+    .change-positive {
+      color: #059669;
+      background-color: #ecfdf5;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 8px;
+      line-height: 14.52px;
+    }
+
+    .change-negative {
+      color: #dc2626;
+      background-color: #fef2f2;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 8px;
+      line-height: 14.52px;
+    }
+
+    /* -------- Spending Activity Chart - Exact Figma Design -------- */
+    #spending-activity {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    #spending-activity h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 24px;
+      line-height: 24.2px;
+    }
+
+    #chart-container {
+      height: 300px;
+      position: relative;
+    }
+
+    .chart-bar {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      height: 250px;
+      gap: 12px;
+    }
+
+    .bar {
+      flex: 1;
+      background: linear-gradient(180deg, #4f46e5 0%, #6366f1 100%);
+      border-radius: 8px 8px 0 0;
+      min-height: 20px;
+      transition: all 0.3s ease;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .bar:hover {
+      opacity: 0.8;
+      transform: scaleY(1.05);
+    }
+
+    .bar-label {
+      text-align: center;
+      margin-top: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: #6b7280;
+      font-weight: 400;
+      line-height: 14.52px;
+    }
+
+    /* -------- Transactions Table - Exact Figma Design -------- */
+    #transactions {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    #transactions h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 24px;
+      line-height: 24.2px;
+    }
+
+    .filter-section {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 8px 16px;
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #6b7280;
+      transition: all 0.2s ease;
+      line-height: 16.94px;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      border-color: #4f46e5;
+      background-color: #eef2ff;
+      color: #4f46e5;
+      font-weight: 700;
+    }
+
+    #transactions table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #transactions th, #transactions td {
+      padding: 16px;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+    }
+
+    #transactions th {
+      background-color: #f9fafb;
+      font-weight: 700;
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 16.94px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    #transactions tbody tr {
+      border-bottom: 1px solid #e5e7eb;
+      transition: background-color 0.2s ease;
+    }
+
+    #transactions tbody tr:hover {
+      background-color: #f9fafb;
+    }
+
+    #transactions tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    #transactions td {
+      font-size: 14px;
+      font-weight: 400;
+      color: #1f2937;
+      line-height: 16.94px;
+    }
+
+    .category-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: capitalize;
+      line-height: 14.52px;
+    }
+
+    .category-transportation { background: #eef2ff; color: #4f46e5; }
+    .category-food { background: #fef2f2; color: #dc2626; }
+    .category-entertainment { background: #fef2f2; color: #dc2626; }
+    .category-education { background: #ecfdf5; color: #059669; }
+    .category-income { background: #ecfdf5; color: #059669; }
+    .category-other { background: #f3f4f6; color: #6b7280; }
+
+    .amount-positive {
+      color: #059669;
+      font-weight: 700;
+    }
+
+    .amount-negative {
+      color: #dc2626;
+      font-weight: 700;
+    }
+
+    .action-icons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      font-size: 16px;
+      color: #6b7280;
+    }
+
+    .icon-btn:hover {
+      background: #f3f4f6;
+      color: #1f2937;
+    }
+
+    .icon-btn.delete:hover {
+      background: #fef2f2;
+      color: #dc2626;
+    }
+
+    /* -------- Modal - Exact Figma Design -------- */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 32px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .modal-header h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 24.2px;
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #6b7280;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      line-height: 1;
+    }
+
+    .close-btn:hover {
+      background: #f3f4f6;
+      color: #1f2937;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      color: #1f2937;
+      font-size: 14px;
+      line-height: 16.94px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #1f2937;
+      transition: all 0.2s ease;
+      background-color: #ffffff;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+      margin-top: 24px;
+    }
+
+    /* -------- Expenses & Income Breakdown - Exact Figma Design -------- */
+    #expenses-income {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    #expenses, #income {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    #expenses h3, #income h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 20px;
+      line-height: 24.2px;
+    }
+
+    .breakdown-list {
+      list-style-type: none;
+    }
+
+    .breakdown-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .breakdown-item:last-child {
+      border-bottom: none;
+    }
+
+    .breakdown-item-name {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: #1f2937;
+      font-size: 14px;
+      line-height: 16.94px;
+    }
+
+    .breakdown-item-amount {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      color: #1f2937;
+      font-size: 14px;
+      line-height: 16.94px;
+    }
+
+    /* -------- Empty State -------- */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #6b7280;
+    }
+
+    .empty-state-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+
+    .empty-state-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1f2937;
+    }
+
+    .empty-state-subtext {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    /* -------- Page Sections - Hidden by default -------- */
+    .page-section {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .page-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* -------- Expenses Page -------- */
+    .expenses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .expense-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .expense-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .expense-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .expense-card-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 19.36px;
+    }
+
+    .expense-card-amount {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #dc2626;
+      line-height: 24.2px;
+    }
+
+    .expense-card-date {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+      line-height: 14.52px;
+    }
+
+    /* -------- Income Page -------- */
+    .income-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .income-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .income-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .income-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .income-card-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 19.36px;
+    }
+
+    .income-card-amount {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #059669;
+      line-height: 24.2px;
+    }
+
+    .income-card-date {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+      line-height: 14.52px;
+    }
+
+    /* -------- Budget Page -------- */
+    .budget-overview {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .budget-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .budget-card h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #6b7280;
+      margin-bottom: 16px;
+      line-height: 19.36px;
+    }
+
+    .budget-progress {
+      margin-top: 16px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background-color: #f3f4f6;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .progress-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+      line-height: 14.52px;
+    }
+
+    /* -------- University Page -------- */
+    .university-info {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 24px;
+    }
+
+    .university-info h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 16px;
+      line-height: 24.2px;
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .info-item:last-child {
+      border-bottom: none;
+    }
+
+    .info-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #6b7280;
+      line-height: 16.94px;
+    }
+
+    .info-value {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 16.94px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 968px) {
+      #sidebar {
+        width: 240px;
+      }
+
+      #main-content {
+        margin-left: 240px;
+        max-width: calc(100% - 240px);
+        padding: 20px;
+      }
+
+      #income-expenses {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      #main-content {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 20px;
+      }
+
+      #sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      #sidebar nav ul li {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <!-- Sidebar - Exact Figma Design -->
+    <aside id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">U</div>
+        <h2>UniBudget</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="nav-link active" data-page="dashboard">Dashboard</a></li>
+          <li><a href="#" class="nav-link" data-page="expenses">Expenses</a></li>
+          <li><a href="#" class="nav-link" data-page="incomes">Incomes</a></li>
+          <li><a href="#" class="nav-link" data-page="budget">Budget</a></li>
+          <li><a href="#" class="nav-link" data-page="university">University</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="avatar"></div>
+        <div class="user-info">
+          <div class="user-name">Student Name</div>
+          <div class="user-role">3rd Year Software Eng</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content - Exact Figma Design -->
+    <main id="main-content">
+      <!-- Dashboard Page -->
+      <section id="dashboard-page" class="page-section active">
+        <header>
+          <h1>Detailed Breakdown</h1>
+          <p>Manage your detailed expenses and income sources.</p>
+        </header>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="btn btn-secondary" onclick="exportData()">
+            Export Data
+          </button>
+          <button class="btn btn-primary" onclick="openAddModal()">
+            Add Transaction
+          </button>
+        </div>
+
+        <!-- Dashboard Overview -->
+        <section id="dashboard">
+        <div id="income-expenses">
+          <div id="total-income">
+            <h3>Total Income</h3>
+            <p id="income-amount">$0.00 <span class="change-positive" id="income-change">+0%</span></p>
+          </div>
+          <div id="total-expenses">
+            <h3>Total Expenses</h3>
+            <p id="expense-amount">$0.00 <span class="change-negative" id="expense-change">+0%</span></p>
+          </div>
+          <div id="net-balance">
+            <h3>Net Balance</h3>
+            <p id="balance-amount">$0.00 <span id="balance-status">- Safe to Spend</span></p>
+          </div>
+        </div>
+
+        <div id="spending-activity">
+          <h3>Spending Activity</h3>
+          <div id="chart-container">
+            <div class="chart-bar" id="chart-bars"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Transactions -->
+      <section id="transactions">
+        <h2>Recent Transactions</h2>
+        <div class="filter-section">
+          <button class="filter-btn active" onclick="filterTransactions('all')">All</button>
+          <button class="filter-btn" onclick="filterTransactions('income')">Income</button>
+          <button class="filter-btn" onclick="filterTransactions('expense')">Expenses</button>
+          <button class="filter-btn" onclick="filterTransactions('transportation')">Transportation</button>
+          <button class="filter-btn" onclick="filterTransactions('food')">Food</button>
+          <button class="filter-btn" onclick="filterTransactions('entertainment')">Entertainment</button>
+          <button class="filter-btn" onclick="filterTransactions('education')">Education</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Transaction Name</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="transactions-body">
+            <!-- Transactions will be dynamically inserted here -->
+          </tbody>
+        </table>
+        <div id="empty-state" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">📭</div>
+          <div class="empty-state-text">No transactions yet</div>
+          <div class="empty-state-subtext">Add your first transaction to get started!</div>
+        </div>
+      </section>
+
+      <!-- Expenses & Income Breakdown -->
+      <section id="expenses-income">
+        <div id="expenses">
+          <h3>Expenses</h3>
+          <ul class="breakdown-list" id="expenses-list">
+            <!-- Expenses will be dynamically inserted here -->
+          </ul>
+        </div>
+
+        <div id="income">
+          <h3>Income</h3>
+          <ul class="breakdown-list" id="income-list">
+            <!-- Income will be dynamically inserted here -->
+          </ul>
+        </div>
+      </section>
+      </section>
+
+      <!-- Expenses Page -->
+      <section id="expenses-page" class="page-section">
+        <header>
+          <h1>Expenses</h1>
+          <p>View and manage all your expenses.</p>
+        </header>
+
+        <div class="action-buttons">
+          <button class="btn btn-secondary" onclick="exportData()">
+            Export Data
+          </button>
+          <button class="btn btn-primary" onclick="openAddModal()">
+            Add Expense
+          </button>
+        </div>
+
+        <div class="expenses-grid" id="expenses-grid">
+          <!-- Expenses will be dynamically inserted here -->
+        </div>
+
+        <div id="expenses-empty" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">💸</div>
+          <div class="empty-state-text">No expenses yet</div>
+          <div class="empty-state-subtext">Add your first expense to get started!</div>
+        </div>
+      </section>
+
+      <!-- Incomes Page -->
+      <section id="incomes-page" class="page-section">
+        <header>
+          <h1>Incomes</h1>
+          <p>View and manage all your income sources.</p>
+        </header>
+
+        <div class="action-buttons">
+          <button class="btn btn-secondary" onclick="exportData()">
+            Export Data
+          </button>
+          <button class="btn btn-primary" onclick="openAddModal()">
+            Add Income
+          </button>
+        </div>
+
+        <div class="income-grid" id="incomes-grid">
+          <!-- Incomes will be dynamically inserted here -->
+        </div>
+
+        <div id="incomes-empty" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">💰</div>
+          <div class="empty-state-text">No income yet</div>
+          <div class="empty-state-subtext">Add your first income source to get started!</div>
+        </div>
+      </section>
+
+      <!-- Budget Page -->
+      <section id="budget-page" class="page-section">
+        <header>
+          <h1>Budget</h1>
+          <p>Track your budget and spending limits.</p>
+        </header>
+
+        <div class="action-buttons">
+          <button class="btn btn-secondary" onclick="exportData()">
+            Export Data
+          </button>
+          <button class="btn btn-primary" onclick="openBudgetModal()">
+            Set Budget
+          </button>
+        </div>
+
+        <div class="budget-overview">
+          <div class="budget-card">
+            <h3>Monthly Budget</h3>
+            <div style="font-size: 32px; font-weight: 700; color: #1f2937; margin-bottom: 8px;" id="monthly-budget-amount">$0.00</div>
+            <div style="font-size: 14px; color: #6b7280;">Total allocated</div>
+            <div class="budget-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" id="budget-progress" style="width: 0%"></div>
+              </div>
+              <div class="progress-text" id="budget-progress-text">0% used</div>
+            </div>
+          </div>
+
+          <div class="budget-card">
+            <h3>Category Budgets</h3>
+            <div id="category-budgets">
+              <!-- Category budgets will be dynamically inserted here -->
+            </div>
+          </div>
+        </div>
+
+        <div id="budget-empty" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">📊</div>
+          <div class="empty-state-text">No budget set</div>
+          <div class="empty-state-subtext">Set your first budget to start tracking!</div>
+        </div>
+      </section>
+
+      <!-- University Page -->
+      <section id="university-page" class="page-section">
+        <header>
+          <h1>University</h1>
+          <p>Manage your university-related expenses and information.</p>
+        </header>
+
+        <div class="university-info">
+          <h3>Student Information</h3>
+          <div class="info-item">
+            <span class="info-label">Name</span>
+            <span class="info-value">Student Name</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Year</span>
+            <span class="info-value">3rd Year</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Program</span>
+            <span class="info-value">Software Engineering</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Student ID</span>
+            <span class="info-value">STU-2023-001</span>
+          </div>
+        </div>
+
+        <div class="university-info">
+          <h3>University Expenses</h3>
+          <div id="university-expenses-list">
+            <!-- University expenses will be dynamically inserted here -->
+          </div>
+        </div>
+
+        <div id="university-empty" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">🎓</div>
+          <div class="empty-state-text">No university expenses</div>
+          <div class="empty-state-subtext">Add university-related expenses to track them here!</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Add/Edit Transaction Modal -->
+  <div id="transaction-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">Add Transaction</h3>
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+      </div>
+      <form id="transaction-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="transaction-name">Transaction Name</label>
+          <input type="text" id="transaction-name" required placeholder="e.g., Uber Ride">
+        </div>
+        <div class="form-group">
+          <label for="transaction-type">Type</label>
+          <select id="transaction-type" required onchange="toggleCategoryOptions()">
+            <option value="expense">Expense</option>
+            <option value="income">Income</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="transaction-category">Category</label>
+          <select id="transaction-category" required>
+            <option value="transportation">Transportation</option>
+            <option value="food">Food</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="education">Education</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="transaction-amount">Amount</label>
+          <input type="number" id="transaction-amount" required step="0.01" min="0.01" placeholder="0.00">
+        </div>
+        <div class="form-group">
+          <label for="transaction-date">Date</label>
+          <input type="date" id="transaction-date" required>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Transaction</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Data storage
+    let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+    let editingIndex = null;
+    let currentFilter = 'all';
+
+    // Initialize with sample data if empty
+    if (transactions.length === 0) {
+      transactions = [
+        { name: 'Uber Ride', type: 'expense', category: 'transportation', amount: 15.50, date: '2025-11-24' },
+        { name: 'Part-time Job', type: 'income', category: 'income', amount: 650, date: '2025-11-20' },
+        { name: 'Textbooks', type: 'expense', category: 'education', amount: 120, date: '2025-11-22' },
+        { name: 'Grocery Run', type: 'expense', category: 'food', amount: 85.50, date: '2025-11-21' },
+        { name: 'Parents Transfer', type: 'income', category: 'income', amount: 1000, date: '2025-11-15' },
+        { name: 'Netflix Sub', type: 'expense', category: 'entertainment', amount: 14, date: '2025-11-18' },
+        { name: 'Bus Pass', type: 'expense', category: 'transportation', amount: 90, date: '2025-11-10' },
+        { name: 'Gov Grant', type: 'income', category: 'income', amount: 2500, date: '2025-11-01' }
+      ];
+      saveTransactions();
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+      updateDashboard();
+      renderTransactions();
+      renderBreakdown();
+      renderChart();
+      setTodayDate();
+      setupNavigation();
+      renderExpensesPage();
+      renderIncomesPage();
+      renderBudgetPage();
+      renderUniversityPage();
+    });
+
+    // Setup navigation
+    function setupNavigation() {
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const page = this.getAttribute('data-page');
+          navigateToPage(page);
+        });
+      });
+    }
+
+    // Navigate to specific page
+    function navigateToPage(page) {
+      // Hide all pages
+      document.querySelectorAll('.page-section').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Remove active class from all nav links
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Show selected page
+      const targetPage = document.getElementById(`${page}-page`);
+      if (targetPage) {
+        targetPage.classList.add('active');
+      }
+
+      // Add active class to clicked nav link
+      const activeLink = document.querySelector(`[data-page="${page}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+      }
+
+      // Update page-specific content
+      if (page === 'expenses') {
+        renderExpensesPage();
+      } else if (page === 'incomes') {
+        renderIncomesPage();
+      } else if (page === 'budget') {
+        renderBudgetPage();
+      } else if (page === 'university') {
+        renderUniversityPage();
+      }
+    }
+
+    // Set today's date as default
+    function setTodayDate() {
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById('transaction-date').value = today;
+    }
+
+    // Toggle category options based on type
+    function toggleCategoryOptions() {
+      const type = document.getElementById('transaction-type').value;
+      const categorySelect = document.getElementById('transaction-category');
+      
+      if (type === 'income') {
+        categorySelect.innerHTML = '<option value="income">Income</option>';
+      } else {
+        categorySelect.innerHTML = `
+          <option value="transportation">Transportation</option>
+          <option value="food">Food</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="education">Education</option>
+          <option value="other">Other</option>
+        `;
+      }
+    }
+
+    // Open modal for adding transaction
+    function openAddModal() {
+      editingIndex = null;
+      document.getElementById('modal-title').textContent = 'Add Transaction';
+      document.getElementById('transaction-form').reset();
+      setTodayDate();
+      document.getElementById('transaction-type').value = 'expense';
+      toggleCategoryOptions();
+      document.getElementById('transaction-modal').classList.add('active');
+    }
+
+    // Open modal for editing transaction
+    function openEditModal(index) {
+      editingIndex = index;
+      const transaction = transactions[index];
+      document.getElementById('modal-title').textContent = 'Edit Transaction';
+      document.getElementById('transaction-name').value = transaction.name;
+      document.getElementById('transaction-type').value = transaction.type;
+      toggleCategoryOptions();
+      document.getElementById('transaction-category').value = transaction.category;
+      document.getElementById('transaction-amount').value = transaction.amount;
+      document.getElementById('transaction-date').value = transaction.date;
+      document.getElementById('transaction-modal').classList.add('active');
+    }
+
+    // Close modal
+    function closeModal() {
+      document.getElementById('transaction-modal').classList.remove('active');
+      editingIndex = null;
+    }
+
+    // Handle form submission
+    function handleSubmit(event) {
+      event.preventDefault();
+      
+      const transaction = {
+        name: document.getElementById('transaction-name').value,
+        type: document.getElementById('transaction-type').value,
+        category: document.getElementById('transaction-category').value,
+        amount: parseFloat(document.getElementById('transaction-amount').value),
+        date: document.getElementById('transaction-date').value
+      };
+
+      if (editingIndex !== null) {
+        transactions[editingIndex] = transaction;
+      } else {
+        transactions.push(transaction);
+      }
+
+      saveTransactions();
+      closeModal();
+    }
+
+    // Delete transaction
+    function deleteTransaction(index) {
+      if (confirm('Are you sure you want to delete this transaction?')) {
+        transactions.splice(index, 1);
+        saveTransactions();
+      }
+    }
+
+    // Save transactions to localStorage
+    function saveTransactions() {
+      localStorage.setItem('transactions', JSON.stringify(transactions));
+    }
+
+    // Update dashboard totals
+    function updateDashboard() {
+      const income = transactions
+        .filter(t => t.type === 'income')
+        .reduce((sum, t) => sum + t.amount, 0);
+      
+      const expenses = transactions
+        .filter(t => t.type === 'expense')
+        .reduce((sum, t) => sum + t.amount, 0);
+      
+      const balance = income - expenses;
+
+      document.getElementById('income-amount').innerHTML = 
+        `$${income.toFixed(2)} <span class="change-positive">+12%</span>`;
+      document.getElementById('expense-amount').innerHTML = 
+        `$${expenses.toFixed(2)} <span class="change-negative">+5%</span>`;
+      
+      const balanceStatus = balance >= 0 ? '- Safe to Spend' : '- Over Budget';
+      document.getElementById('balance-amount').innerHTML = 
+        `$${Math.abs(balance).toFixed(2)} <span id="balance-status">${balanceStatus}</span>`;
+    }
+
+    // Filter transactions
+    function filterTransactions(filter) {
+      currentFilter = filter;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      renderTransactions();
+    }
+
+    // Render transactions table
+    function renderTransactions() {
+      const tbody = document.getElementById('transactions-body');
+      const emptyState = document.getElementById('empty-state');
+      
+      let filtered = transactions;
+      if (currentFilter !== 'all') {
+        if (currentFilter === 'income' || currentFilter === 'expense') {
+          filtered = transactions.filter(t => t.type === currentFilter);
+        } else {
+          filtered = transactions.filter(t => t.category === currentFilter);
+        }
+      }
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = '';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      
+      // Sort by date (newest first)
+      filtered = [...filtered].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      tbody.innerHTML = filtered.map((transaction, index) => {
+        const actualIndex = transactions.indexOf(transaction);
+        const date = new Date(transaction.date).toLocaleDateString('en-US', { 
+          year: 'numeric', 
+          month: 'short', 
+          day: 'numeric' 
+        });
+        const amount = transaction.type === 'income' 
+          ? `+$${transaction.amount.toFixed(2)}` 
+          : `-$${transaction.amount.toFixed(2)}`;
+        const amountClass = transaction.type === 'income' ? 'amount-positive' : 'amount-negative';
+        
+        return `
+          <tr>
+            <td>${transaction.name}</td>
+            <td><span class="category-badge category-${transaction.category}">${transaction.category}</span></td>
+            <td>${date}</td>
+            <td class="${amountClass}">${amount}</td>
+            <td>
+              <div class="action-icons">
+                <button class="icon-btn" onclick="openEditModal(${actualIndex})" title="Edit">✏️</button>
+                <button class="icon-btn delete" onclick="deleteTransaction(${actualIndex})" title="Delete">🗑️</button>
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Render breakdown lists
+    function renderBreakdown() {
+      const expensesList = document.getElementById('expenses-list');
+      const incomeList = document.getElementById('income-list');
+
+      const expenses = transactions.filter(t => t.type === 'expense');
+      const income = transactions.filter(t => t.type === 'income');
+
+      // Group by category
+      const expenseGroups = {};
+      expenses.forEach(t => {
+        if (!expenseGroups[t.category]) {
+          expenseGroups[t.category] = 0;
+        }
+        expenseGroups[t.category] += t.amount;
+      });
+
+      const incomeGroups = {};
+      income.forEach(t => {
+        if (!incomeGroups[t.category]) {
+          incomeGroups[t.category] = 0;
+        }
+        incomeGroups[t.category] += t.amount;
+      });
+
+      expensesList.innerHTML = Object.entries(expenseGroups)
+        .sort((a, b) => b[1] - a[1])
+        .map(([category, amount]) => `
+          <li class="breakdown-item">
+            <span class="breakdown-item-name">${category.charAt(0).toUpperCase() + category.slice(1)}</span>
+            <span class="breakdown-item-amount">$${amount.toFixed(2)}</span>
+          </li>
+        `).join('') || '<li class="breakdown-item"><span class="breakdown-item-name">No expenses yet</span></li>';
+
+      incomeList.innerHTML = Object.entries(incomeGroups)
+        .sort((a, b) => b[1] - a[1])
+        .map(([category, amount]) => `
+          <li class="breakdown-item">
+            <span class="breakdown-item-name">${category.charAt(0).toUpperCase() + category.slice(1)}</span>
+            <span class="breakdown-item-amount">$${amount.toFixed(2)}</span>
+          </li>
+        `).join('') || '<li class="breakdown-item"><span class="breakdown-item-name">No income yet</span></li>';
+    }
+
+    // Render chart
+    function renderChart() {
+      const chartContainer = document.getElementById('chart-bars');
+      const last7Days = getLast7Days();
+      
+      const dailyData = last7Days.map(date => {
+        const dayTransactions = transactions.filter(t => t.date === date);
+        const total = dayTransactions
+          .filter(t => t.type === 'expense')
+          .reduce((sum, t) => sum + t.amount, 0);
+        return { date, total };
+      });
+
+      const maxAmount = Math.max(...dailyData.map(d => d.total), 1);
+
+      chartContainer.innerHTML = dailyData.map((data, index) => {
+        const height = (data.total / maxAmount) * 100;
+        const dayName = new Date(data.date).toLocaleDateString('en-US', { weekday: 'short' });
+        return `
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+            <div class="bar" style="height: ${height}%; width: 100%;" title="$${data.total.toFixed(2)}"></div>
+            <div class="bar-label">${dayName}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Get last 7 days dates
+    function getLast7Days() {
+      const dates = [];
+      for (let i = 6; i >= 0; i--) {
+        const date = new Date();
+        date.setDate(date.getDate() - i);
+        dates.push(date.toISOString().split('T')[0]);
+      }
+      return dates;
+    }
+
+    // Export data
+    function exportData() {
+      const dataStr = JSON.stringify(transactions, null, 2);
+      const dataBlob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(dataBlob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'unibudget-transactions.json';
+      link.click();
+    }
+
+    // Render Expenses Page
+    function renderExpensesPage() {
+      const expensesGrid = document.getElementById('expenses-grid');
+      const emptyState = document.getElementById('expenses-empty');
+      const expenses = transactions.filter(t => t.type === 'expense');
+
+      if (expenses.length === 0) {
+        expensesGrid.innerHTML = '';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      expensesGrid.innerHTML = expenses
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map((expense, index) => {
+          const date = new Date(expense.date).toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'short', 
+            day: 'numeric' 
+          });
+          const actualIndex = transactions.indexOf(expense);
+          return `
+            <div class="expense-card">
+              <div class="expense-card-header">
+                <div class="expense-card-title">${expense.name}</div>
+                <div class="expense-card-amount">-$${expense.amount.toFixed(2)}</div>
+              </div>
+              <div class="expense-card-date">${date}</div>
+              <div style="margin-top: 12px;">
+                <span class="category-badge category-${expense.category}">${expense.category}</span>
+              </div>
+              <div style="margin-top: 16px; display: flex; gap: 8px;">
+                <button class="icon-btn" onclick="openEditModal(${actualIndex})" title="Edit">✏️</button>
+                <button class="icon-btn delete" onclick="deleteTransaction(${actualIndex})" title="Delete">🗑️</button>
+              </div>
+            </div>
+          `;
+        }).join('');
+    }
+
+    // Render Incomes Page
+    function renderIncomesPage() {
+      const incomesGrid = document.getElementById('incomes-grid');
+      const emptyState = document.getElementById('incomes-empty');
+      const incomes = transactions.filter(t => t.type === 'income');
+
+      if (incomes.length === 0) {
+        incomesGrid.innerHTML = '';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      incomesGrid.innerHTML = incomes
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map((income, index) => {
+          const date = new Date(income.date).toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'short', 
+            day: 'numeric' 
+          });
+          const actualIndex = transactions.indexOf(income);
+          return `
+            <div class="income-card">
+              <div class="income-card-header">
+                <div class="income-card-title">${income.name}</div>
+                <div class="income-card-amount">+$${income.amount.toFixed(2)}</div>
+              </div>
+              <div class="income-card-date">${date}</div>
+              <div style="margin-top: 12px;">
+                <span class="category-badge category-${income.category}">${income.category}</span>
+              </div>
+              <div style="margin-top: 16px; display: flex; gap: 8px;">
+                <button class="icon-btn" onclick="openEditModal(${actualIndex})" title="Edit">✏️</button>
+                <button class="icon-btn delete" onclick="deleteTransaction(${actualIndex})" title="Delete">🗑️</button>
+              </div>
+            </div>
+          `;
+        }).join('');
+    }
+
+    // Render Budget Page
+    function renderBudgetPage() {
+      const monthlyBudget = parseFloat(localStorage.getItem('monthlyBudget')) || 0;
+      const expenses = transactions.filter(t => t.type === 'expense');
+      const totalExpenses = expenses.reduce((sum, t) => sum + t.amount, 0);
+      const budgetUsed = monthlyBudget > 0 ? (totalExpenses / monthlyBudget) * 100 : 0;
+
+      document.getElementById('monthly-budget-amount').textContent = `$${monthlyBudget.toFixed(2)}`;
+      document.getElementById('budget-progress').style.width = `${Math.min(budgetUsed, 100)}%`;
+      document.getElementById('budget-progress-text').textContent = `${budgetUsed.toFixed(1)}% used`;
+
+      // Category budgets
+      const categoryBudgets = JSON.parse(localStorage.getItem('categoryBudgets')) || {};
+      const categoryExpenses = {};
+      expenses.forEach(expense => {
+        if (!categoryExpenses[expense.category]) {
+          categoryExpenses[expense.category] = 0;
+        }
+        categoryExpenses[expense.category] += expense.amount;
+      });
+
+      const categoryBudgetsHtml = Object.entries(categoryBudgets)
+        .map(([category, budget]) => {
+          const spent = categoryExpenses[category] || 0;
+          const percent = (spent / budget) * 100;
+          return `
+            <div style="margin-bottom: 16px;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                <span style="font-size: 14px; font-weight: 400; color: #1f2937;">${category.charAt(0).toUpperCase() + category.slice(1)}</span>
+                <span style="font-size: 14px; font-weight: 700; color: #1f2937;">$${spent.toFixed(2)} / $${budget.toFixed(2)}</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: ${Math.min(percent, 100)}%; background: ${percent > 100 ? 'linear-gradient(90deg, #dc2626 0%, #ef4444 100%)' : 'linear-gradient(90deg, #4f46e5 0%, #6366f1 100%)'};"></div>
+              </div>
+            </div>
+          `;
+        }).join('') || '<div style="color: #6b7280; font-size: 14px;">No category budgets set</div>';
+
+      document.getElementById('category-budgets').innerHTML = categoryBudgetsHtml;
+    }
+
+    // Render University Page
+    function renderUniversityPage() {
+      const universityExpenses = transactions.filter(t => 
+        t.type === 'expense' && (t.category === 'education' || t.name.toLowerCase().includes('university') || t.name.toLowerCase().includes('tuition') || t.name.toLowerCase().includes('textbook'))
+      );
+      const emptyState = document.getElementById('university-empty');
+      const expensesList = document.getElementById('university-expenses-list');
+
+      if (universityExpenses.length === 0) {
+        expensesList.innerHTML = '';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      expensesList.innerHTML = universityExpenses
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map(expense => {
+          const date = new Date(expense.date).toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'short', 
+            day: 'numeric' 
+          });
+          return `
+            <div class="info-item">
+              <div>
+                <div style="font-weight: 700; color: #1f2937; margin-bottom: 4px;">${expense.name}</div>
+                <div style="font-size: 12px; color: #6b7280;">${date}</div>
+              </div>
+              <div style="font-weight: 700; color: #dc2626;">-$${expense.amount.toFixed(2)}</div>
+            </div>
+          `;
+        }).join('');
+    }
+
+    // Open Budget Modal
+    function openBudgetModal() {
+      const monthlyBudget = parseFloat(localStorage.getItem('monthlyBudget')) || 0;
+      const budget = prompt('Enter your monthly budget:', monthlyBudget);
+      if (budget !== null && !isNaN(parseFloat(budget))) {
+        localStorage.setItem('monthlyBudget', parseFloat(budget));
+        renderBudgetPage();
+      }
+    }
+
+    // Override saveTransactions to update all pages
+    const originalSaveTransactions = saveTransactions;
+    window.saveTransactions = function() {
+      originalSaveTransactions();
+      renderExpensesPage();
+      renderIncomesPage();
+      renderBudgetPage();
+      renderUniversityPage();
+      updateDashboard();
+      renderTransactions();
+      renderBreakdown();
+      renderChart();
+    };
+
+    // Close modal on outside click
+    document.getElementById('transaction-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
